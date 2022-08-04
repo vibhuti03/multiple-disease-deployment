@@ -1,15 +1,7 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Aug  1 16:53:18 2022
-
-@author: apple
-"""
-
 import numpy as np
 import pickle
 import streamlit as st
-# from streamlit_option_menu import option_menu
+from streamlit_option_menu import option_menu
 
 diabetes_model = pickle.load(open('diabetes_model.sav','rb'))
 
