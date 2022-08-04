@@ -11,7 +11,7 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-diabetes_model = pickle.load(open('/Users/apple/Downloads/Multiple-Disease-Prediction-main/Models/diabetes_model.sav','rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav','rb'))
 
 # input_data = (5,166,19,25.8,51)
 
@@ -29,8 +29,8 @@ diabetes_model = pickle.load(open('/Users/apple/Downloads/Multiple-Disease-Predi
 # else:
 #   print('The person is diabetic')
 
-cancer_model = pickle.load(open('/Users/apple/Downloads/Multiple-Disease-Prediction-main/Models/cancer_model.sav','rb'))
-heart_model = pickle.load(open('/Users/apple/Downloads/Multiple-Disease-Prediction-main/Models/heart_model.sav','rb'))
+cancer_model = pickle.load(open('cancer_model.sav','rb'))
+heart_model = pickle.load(open('heart_model.sav','rb'))
 
 
 def diabetes_prediction(input_data):
